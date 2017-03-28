@@ -24,7 +24,7 @@ class Modules(QWidget):
 
     def init_UI(self):
         main_layout = QVBoxLayout()
-        list_lable = QLabel(u"ماژول ها:")
+        list_lable = QLabel(u"Modules:")
         list_lable.setFont(QFont('SansSerif', 15))
         main_layout.addWidget(list_lable)
         i = 1

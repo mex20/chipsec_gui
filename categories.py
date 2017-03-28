@@ -21,7 +21,7 @@ class Cagtegories(QWidget):
     def init_UI(self):
         main_layout = QVBoxLayout()
         main_layout.setSpacing(5)
-        list_lable = QLabel(u"دسته بندی ها:")
+        list_lable = QLabel(u"Categories:")
         list_lable.setFont(QFont('SansSerif', 15))
         main_layout.addWidget(list_lable)
         i = 1

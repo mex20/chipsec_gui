@@ -1,3 +1,31 @@
+	chipsec_gui Readme:
+
+chipsec_gui is a simple GUI for the firmware tool CHIPSEC. Continue to the CHIPSEC Readme for more information on the software from the Intel CHIPSEC team.
+
+	Dependencies:
+
+chipsec_gui requires SIP and PyQt4 (As well as their dependencies for compiling.) in order to use the GUI. 
+
+SIP Source Code can be found at: (http://www.riverbankcomputing.com/software/sip/)
+
+PyQt4 Source Code can be found at: (https://riverbankcomputing.com/software/pyqt/intro)
+
+
+
+	Start the GUI:
+Enter the directory this repository was extracted to on the command line, then execute this command in the terminal. "python mainWindow.py" 
+
+
+
+
+
+
+
+
+
+	CHIPSEC Readme:
+
+
 CHIPSEC: Platform Security Assessment Framework
 ===============================================
 
