@@ -32,7 +32,7 @@ class AdvancedFormWidget(QWidget):
         top_layout = QVBoxLayout()
         top_layout.setContentsMargins(5, 0, 0, 0)
 
-        self.b1 = QRadioButton(u"ماژول های انتخابی")
+        self.b1 = QRadioButton(u"Optional Modules")
         self.b1.setChecked(True)
         self.b1.setFont(QFont('SansSerif', 15))
         self.b1.clicked.connect(
@@ -40,16 +40,16 @@ class AdvancedFormWidget(QWidget):
         )
 
         path_layout = QHBoxLayout()
-        lable = QLabel(u"دایرکتوری برای بارگذاری ماژول ها:")
+        lable = QLabel(u"Directory to load modules:")
         self.location = QLabel()
-        additional_path = QPushButton(u"انتخاب دایرکتوری")
+        additional_path = QPushButton(u"Select Directory")
         additional_path.clicked.connect(self.path)
         
         path_layout.addWidget(additional_path)
         path_layout.addWidget(self.location, alignment=Qt.AlignRight)
         path_layout.addWidget(lable, alignment=Qt.AlignRight)
 
-        self.b2 = QRadioButton(u"همه ماژول ها")
+        self.b2 = QRadioButton(u"All Modules")
         self.b2.setFont(QFont('SansSerif', 15))
         self.b2.clicked.connect(
             partial(self.change_all, True)

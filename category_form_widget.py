@@ -38,7 +38,7 @@ class CategoryFormWidget(QWidget):
         top_layout.setAlignment(Qt.AlignRight)
         top_layout.setContentsMargins(5, 0, 0, 0)
 
-        # self.b1 = QRadioButton(u"ماژول های انتخابی")
+        # self.b1 = QRadioButton(u"Optional Modules")
         # self.b1.setChecked(True)
         # self.b1.setFont(QFont('SansSerif', 15))
         # self.b1.clicked.connect(
@@ -47,16 +47,16 @@ class CategoryFormWidget(QWidget):
 
         path_layout = QVBoxLayout()
         path_layout.setSpacing(5)
-        lable = QLabel(u"دایرکتوری برای بارگذاری ماژول ها:")
+        lable = QLabel(u"Directory to load modules:")
         self.location = QLabel("chipsec/modules/common")
-        additional_path = QPushButton(u"تغییر دایرکتوری")
+        additional_path = QPushButton(u"Change Directory")
         additional_path.clicked.connect(self.path)
         
         path_layout.addWidget(lable, alignment=Qt.AlignRight)
         path_layout.addWidget(self.location, alignment=Qt.AlignRight)
         path_layout.addWidget(additional_path, alignment=Qt.AlignRight)
 
-        # self.b2 = QRadioButton(u"همه ماژول ها")
+        # self.b2 = QRadioButton(u"All Modules")
         # self.b2.setFont(QFont('SansSerif', 15))
         # self.b2.clicked.connect(
         #     partial(self.change_all, True)
